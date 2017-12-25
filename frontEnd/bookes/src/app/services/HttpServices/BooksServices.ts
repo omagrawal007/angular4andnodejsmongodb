@@ -3,13 +3,13 @@ import {  Http } from '@angular/http';
 import { globalVariable } from '../../global.variable';
 import { Observable } from 'rxjs';
 import 'rxjs/add/operator/map';  // we need to import this now
-// baseAppUrl
+// /book/list
 @Injectable()
 export class BookServices {
     // , private globalVariable:globalVariable
     constructor(private _http: Http,private globalVariable:globalVariable) { };    
     getBookList = function () {  
-        return this._http.get(this.globalVariable.baseAppUrl)
+        return this._http.get(this.globalVariable.baseAppUrl+'book/list')
             .map(data => {                
                 console.log("I CAN SEE DATA HERE: ", data.json());
                 return data.json();
