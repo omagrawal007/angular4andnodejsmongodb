@@ -17,7 +17,7 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
   connection: 'someMongodbServer',
-  // schema: true,
+  schema: true,
   /***************************************************************************
   *                                                                          *
   * How and whether Sails will attempt to automatically rebuild the          *

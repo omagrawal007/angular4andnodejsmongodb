@@ -36,14 +36,20 @@ module.exports.routes = {
 
   //All Book management routing
   'get /book/bookList': 'BookController.list',
-  'post /book/CreateBook': 'BookController.CreateBook',
+  'post /book/create': 'BookController.CreateBook',
 
 
 
   // User Management
 
   'get /user/list': 'UserController.list',
-  'post /user/create': 'UserController.CreateUser'
+  'post /user/create': 'UserController.CreateUser',
+
+
+  // all books lession managment
+  
+  'post /bookLession/list':'BookstoriesController.List',
+  'post /bookLession/create':'BookstoriesController.CreateLession'
 
 
   /***************************************************************************

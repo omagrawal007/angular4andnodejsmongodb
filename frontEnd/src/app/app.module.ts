@@ -10,6 +10,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
 import { books } from '../pages/book/books.component';
 
+import { BookStories } from '../pages/books/storieslist';
+
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -30,7 +33,8 @@ import { globalVariable } from './global.variable';
     ContactPage,
     HomePage,
     TabsPage,
-    books
+    books,
+    BookStories
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,8 @@ import { globalVariable } from './global.variable';
     ContactPage,
     HomePage,
     TabsPage,
-    books
+    books,
+    BookStories
   ],
   providers: [
     StatusBar,
